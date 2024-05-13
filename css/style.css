@@ -116,7 +116,61 @@ footer a{
     bottom: 4rem;
     right: 0.625rem;
 }
+/* FIN FOOTER */
 
+/* INICIO HERO */
+.hero{
+    background-image: url("../images/fondo.jpg");
+    background-size:cover;
+    padding: 8.125rem 0.625rem;
+    background-position: center ;
+    background-color: #777;
+    background-blend-mode: multiply;
+}
+.hero h1{
+    font-family: var(--fuentetitulos);
+    font-size: 2.25rem;
+    color: white;
+}
+.hero h2{
+    color: var(--colorprincipal);
+    font-size: 1.25rem;
+    margin: var(--gap) 0;
+}
+.hero p{
+    color: white;
+}
+.boton{
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    border: 1px solid var(--colorprincipal);
+    padding: 1.15rem;
+    text-decoration: none;
+    color: white;
+    margin: var(--gap) 0;
+    
+    &:hover{
+        background-color: transparent;
+        border: 1px solid var(--colorprincipal);
+        color: var(--colorprincipal);
+        
+        & i{
+            transform: translateX(5px);
+            transition: transform 0.5s;
+        }
+    }
+}
+.hero .social{
+    display: flex;
+    justify-content: space-between;
+    width: 10.5rem;
+
+    & a{
+        font-size: 2rem;
+        color: white;
+    }
+}
+/* FIN HERO */
 
 /*  INICIO MEDIA QUERIES */
 @media(min-width:48rem){
