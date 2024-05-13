@@ -2,3 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400,700;1,400,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+/* INICIO LAYOUT GENERAL */
+html{
+    scroll-behavior: smooth; /* punto de ancla animado */
+}
+:root{
+    --fuenteprincipal: "Montserrat", sans-serif;
+    --fuentetitulos:"Handlee", cursive;
+    --colorprincipal:#fa573a;
+    --colorsecundario:#21242e; /* color fondo menu */
+    --fontsize:1rem;
+    --anchomaximo:68.75rem;
+    --gap:1rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.container{
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+    /* padding lateral para movil */
+}
+body{
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+/* FIN LAYOUT GENERAL */
+
+/* INICIO HEADER */
+
