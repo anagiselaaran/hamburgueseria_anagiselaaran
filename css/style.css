@@ -1,4 +1,4 @@
-@import url("./css/reset.css");
+@import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400,700;1,400,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
@@ -49,10 +49,49 @@ header .nav-top .container{
         color: var(--colorprincipal);
     }
 }
+header nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.25rem;
+}
+header nav figure a{
+    display: block;
+    max-width: 6.25rem;
+}
+header nav figure{
+    width: calc(100% - 1.875rem);
+}
+header .hamburguesa{
+    width: 1.875rem;
+    cursor: pointer;
+}
+header nav .hamburguesa div{
+    border-top: 0.125rem solid #aaa;
+    margin-bottom: 0.625rem;
+}
+header .menu{
+    width: 100%;
+}
+header .menu a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: center;
+    border-bottom: 0.0625rem solid #aaa;
+    color: #aaa;
+}
+header .menu li:last-child a{
+    border-bottom: 0;
+}
+header .menu a.active{
+    color: var(--colorprincipal);
+}
+
 
 
 /*  INICIO MEDIA QUERIES */
-@media(min-width:768px){
+@media(min-width:48rem){
     header .nav-top .container{
         justify-content: space-between;
         
@@ -66,4 +105,22 @@ header .nav-top .container{
         }
     }
 }
+
+@media(width >=62.75rem){ /* 1004px */
+    header .hamburguesa{
+        display: none;
+    }
+    header nav .container{
+        flex-wrap: nowrap;
+    }
+    header .menu{
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: end;
+    }
+    header .menu a{
+         border: 0;
+         padding: 0rem 0rem 0rem 1.25rem;
+    }
+} 
 /* FIN MEDIA QUERIES */
