@@ -25,6 +25,7 @@ img{
     max-width: var(--anchomaximo);
     margin: 0 auto;
     /* padding lateral para movil */
+    padding: 0 0.625rem;
 }
 body{
     font-family: var(--fuenteprincipal);
@@ -33,4 +34,36 @@ body{
 /* FIN LAYOUT GENERAL */
 
 /* INICIO HEADER */
+header .nav-top{
+    background-color: var(--colorsecundario);
+    padding: 1.25rem 0;
+}
+header .nav-top .container{
+    display: flex;
+    justify-content: space-around;
+    & span{
+        display: none;
+    }
+    & i{
+        font-size: 140%;
+        color: var(--colorprincipal);
+    }
+}
 
+
+/*  INICIO MEDIA QUERIES */
+@media(min-width:768px){
+    header .nav-top .container{
+        justify-content: space-between;
+        
+        & span{
+            display: inline;
+        }
+        & a{
+            color: white;
+            text-decoration: none;
+            font-size: 110%;
+        }
+    }
+}
+/* FIN MEDIA QUERIES */
