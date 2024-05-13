@@ -87,7 +87,34 @@ header .menu li:last-child a{
 header .menu a.active{
     color: var(--colorprincipal);
 }
+/* FINAL HEADER */
 
+
+/* INICIO FOOTER */
+footer{
+    background-color: var(--colorsecundario);
+    text-align: center;
+    color: white;
+    padding: 1.25rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        color: var(--colorprincipal);
+    }
+}
+.flecha a{
+    font-size: 300%;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 4rem;
+    right: 0.625rem;
+}
 
 
 /*  INICIO MEDIA QUERIES */
@@ -103,6 +130,9 @@ header .menu a.active{
             text-decoration: none;
             font-size: 110%;
         }
+    }
+    footer{
+        text-align: left;
     }
 }
 
