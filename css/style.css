@@ -243,6 +243,43 @@ main section .underline{
 
 /* FINAL SECCION OUR SERVICE */ 
 
+/* INICIO SECCION ABOUT US */
+#aboutus .flex{
+    display: flex;
+    flex-direction: column;
+    gap:var(--gap);
+}
+#aboutus h3{
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+#aboutus h4{
+    color: var(--colorprincipal);
+    font-size: 1.07rem;
+    margin: var(--gap) 0;
+}
+#aboutus p{
+    color: #777;
+    line-height:1.3rem;
+}
+#aboutus .marco{
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+    transition: 1s;
+
+    & img{
+        transform: rotateZ(-10deg);
+        transition: 1s;
+    }
+}
+#aboutus figure:hover .marco, #aboutus figure:hover img{ /* :is(.marco, img) van separados del elemento */
+    transform: rotateZ(0deg);
+}
+
+/* FINAL SECCION ABOUT US */
+
 /*  INICIO MEDIA QUERIES */
 @media(width>=37.5rem){
     #ourservice .grid{
@@ -256,6 +293,9 @@ main section .underline{
         padding: 1.25rem;
         border-bottom: 0;
         border-left: 1px solid #aaa;
+    }
+    #aboutus .flex{
+        flex-direction: row;
     }
 }
 
