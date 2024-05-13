@@ -280,6 +280,28 @@ main section .underline{
 
 /* FINAL SECCION ABOUT US */
 
+
+/* INICIO MENU.HTML */
+main #menu {
+    background-color: var(--colorsecundario);
+}
+main #menu .container h2{
+    color: white;
+}
+main #menu .container ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+
+    &:hover{
+        background-color: var(--colorprincipal);
+    }
+}
+
+
+
 /*  INICIO MEDIA QUERIES */
 @media(width>=37.5rem){
     #ourservice .grid{
