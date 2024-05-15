@@ -352,7 +352,7 @@ main {
 
 
 /*  INICIO MEDIA QUERIES */
-@media(width>=37.5rem){
+@media(width>=37.5rem){ /* 600px */
     #ourservice .grid{
         grid-template-columns: repeat(2,1fr);
         
@@ -368,7 +368,54 @@ main {
     #aboutus .flex{
         flex-direction: row;
     }
-}
+    #menu .container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #menu .container div:first-child{
+        grid-column: 1/4;
+    }
+    #menu .container aside nav.menu{
+        margin: 3.125rem 3.125rem 3.125rem 0;
+        
+    }
+    #menu .container aside .offers-top{
+        width: 85%;
+        & p{
+            padding: 0.5rem 0;
+            letter-spacing: 1px;
+        }
+    }
+    #menu .container .food{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+    #menu .container .food figure:first-child{
+        grid-column: 1/2;
+        padding-right: 10px;
+    
+    }
+    #menu .container .food div:nth-child(2){
+        grid-column: 2/4;
+
+        & h3{
+            margin: 0px 5px 10px 0px ;
+            font-size: 14px;
+            & span{
+                display: inline-block;
+                margin-left: 20px;
+                margin-top: 5px;
+            }
+        }
+    }
+    #menu .container .food div:nth-child(3){
+        grid-column: 2/3;
+    }
+    
+    }
+
 
 @media(min-width:48rem){
     header .nav-top .container{
